@@ -1,0 +1,13 @@
+default:
+  image: ago29/gitlab-base-image
+  tags:
+    - shared
+
+stages:
+  - lint
+
+linting:
+  stage: lint
+  script:
+    - pre-commit install
+    - pre-commit run -a

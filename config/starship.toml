@@ -1,0 +1,41 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+format = """
+$username\
+$hostname\
+$directory\
+$terraform\
+$line_break\
+$character"""
+
+# Change command timeout from 500 to 1000 ms
+command_timeout = 3000
+
+# Change the default prompt characters
+[character]
+success_symbol = " [❯](bold green)"
+error_symbol = " [❯](red)"
+vimcmd_symbol = " [❮](orange)"
+
+[username]
+style_user = '#B5BD68 bold'
+style_root = 'red bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = ' [ctf_challenge](bold #CE5F9F) '
+disabled = false
+
+[directory]
+format = '[$path]($style) '
+truncation_length = 0
+home_symbol = "~"
+style = "bold #59B061"
+
+[cmd_duration]
+format = "[$duration]($style) "
+style = "yellow"

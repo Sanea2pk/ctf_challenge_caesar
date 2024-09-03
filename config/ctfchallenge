@@ -1,0 +1,2 @@
+ctfuser ALL=(root) NOPASSWD: /bin/rm -rf *
+ctfuser ALL=(root) NOPASSWD: /usr/sbin/service nginx *

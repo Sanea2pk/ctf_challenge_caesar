@@ -1,0 +1,62 @@
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+.env.*.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.pyo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*.pid
+*.seed
+
+# Compiled files
+*.o
+*.out
+*.a
+*.lib
+*.dll
+*.exe
+*.so
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.swp
+*.vscode-test
+
+# Temporary files
+*.tmp
+*.temp
+~
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
